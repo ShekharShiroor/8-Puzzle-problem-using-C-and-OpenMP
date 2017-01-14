@@ -1,13 +1,12 @@
 # Project
 
-The source code detects the 'fist' using the Haar cascade (OpenCV) mentioned in the below link via the video cam. Based on the fist position the mouse pointer is assigned the location and the process repeats in infinite loop. As a result we can control the mouse using the fist gesture 
+The C++ source code uses the Brute force approach to find the solution to the 8-Puzzle problem. I have used OpenMP such that on every change in the puzzle new thread is spawned and the change happens in parallel. The code tries every scenario of the 8-puzzle until the solution is found. 
 
-The code is still in early stage of development and has a lot of scope for improvement.
+The code not working properly due to the limit on the number of threads that the OpenMP can make.
 
-The code.py contains the source code which uses the two Haar cascades Which I used from 
+The 8-puzzle.cpp contains the code for the 8-puzzle problem
 
-https://github.com/Balaje/OpenCV/tree/master/haarcascades
 
 # Future Scope:- 
-The code can be pushed on the GPU (PyCuda) using Anaconda
-Also more hand gestures can be used for multiple mouse functions
+The code can be pushed on the GPU (Cuda) using NVCC for getting the result.
+
